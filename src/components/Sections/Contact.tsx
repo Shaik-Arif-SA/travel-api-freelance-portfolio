@@ -6,12 +6,12 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="bg-cover bg-center"
+      className="bg-cover py-10 lg:px-8 lg:py-20 bg-center"
       style={{
         backgroundImage: `url('/images/hero/contact_bg2.webp')`
       }}
     >
-      <Sections className="py-10 lg:px-8 lg:py-20">
+      <Sections className="">
         <div
           className="mt-15 flex flex-col gap-5 rounded-3xl p-2 lg:flex-row lg:p-6"
           style={{
