@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Sections from '@/components/myUi/Section';
-import { Button } from '@/components/ui/button';
+import { Button, ScrollButton } from '@/components/ui/button';
 
 export default function Home() {
   return (
@@ -43,20 +43,22 @@ export default function Home() {
         </p>
 
         <div className="mt-6 flex gap-3 lg:mb-3 xl:mb-0">
-          <Button
+          <ScrollButton
             variant={'outline'}
+            to="services"
             className="bg-secondary-50"
             data-aos="fade-up"
           >
             Explore Courses
-          </Button>
-          <Button
+          </ScrollButton>
+          <ScrollButton
             variant={'secondary'}
+            to="contact"
             className="text-white"
             data-aos="fade-up"
           >
             Contact Us
-          </Button>
+          </ScrollButton>
         </div>
       </div>
       <div

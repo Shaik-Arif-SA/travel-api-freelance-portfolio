@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
-
 import { cn } from '@/lib/utils';
+import { Link, LinkProps } from 'react-scroll';
+import clsx from 'clsx';
 
-const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20  aria-invalid:border-destructive",
+export const buttonVariants = cva(
+  "inline-flex items-center cursor-pointer justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20  aria-invalid:border-destructive",
   {
     variants: {
       variant: {
@@ -34,7 +35,7 @@ const buttonVariants = cva(
   }
 );
 
-function Button({
+export function Button({
   className,
   variant,
   size,
@@ -45,7 +46,6 @@ function Button({
     asChild?: boolean;
   }) {
   const Comp = asChild ? Slot : 'button';
-
   return (
     <Comp
       data-slot="button"
@@ -58,4 +58,33 @@ function Button({
   );
 }
 
-export { Button, buttonVariants };
+type ScrollButtonProps = {
+  children: React.ReactNode | string;
+  className?: string;
+  variant?: 'default' | 'secondary' | 'outline' | 'ghost' | 'link';
+  size?: 'default' | 'sm' | 'lg' | 'icon';
+  to: string;
+  props?: LinkProps;
+};
+
+export function ScrollButton({
+  children,
+  className,
+  variant,
+  size,
+  to,
+  ...props
+}: ScrollButtonProps) {
+  return (
+    <Link
+      className={clsx(buttonVariants({ variant, size, className }))}
+      to={to}
+      smooth={true}
+      duration={500}
+      offset={-80}
+      {...props}
+    >
+      {children}
+    </Link>
+  );
+}

@@ -4,6 +4,8 @@ import Sections from '../myUi/Section';
 import clsx from 'clsx';
 import JEEContainer from './JEEContainer';
 import { services } from '@/constant/data';
+import NEETContainer from './NEETContainer';
+import TTContainer from './TTContainer';
 
 export default function Services() {
   const [mode, setMode] = useState<'jee' | 'neet' | 'tt'>('jee');
@@ -17,7 +19,6 @@ export default function Services() {
       }}
     >
       <Sections className="px-3 lg:px-6 xl:!px-6">
-
         <div className="text-md flex items-center justify-center gap-2 font-semibold text-white">
           <button
             className="data-[state=jee]:text-primary flex cursor-pointer items-center gap-2 rounded-sm px-4 py-2 data-[state=jee]:bg-white"
@@ -45,12 +46,10 @@ export default function Services() {
             TT
           </button>
         </div>
-
-        <div className="mt-10 rounded-2xl bg-white p-3 py-20 text-center xl:p-5 xl:px-27">
+        <div className="mt-10 rounded-2xl bg-white p-3 md:p-8 xl:p-5 xl:px-8">
           {mode === 'jee' && <JEEContainer jee={services.jee} />}
-
-          {/* {mode === 'neet' && <NEETContainer />}
-          {mode === 'tt' && <TTContainer />} */}
+          {mode === 'neet' && <NEETContainer neet={services.neet} />}
+          {mode === 'tt' && <TTContainer tt={services.tt} />}
         </div>
       </Sections>
     </div>

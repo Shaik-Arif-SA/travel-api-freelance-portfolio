@@ -22,17 +22,17 @@ export type MentorType = {
   image: string;
 };
 
-export type TapsType = {
+export type TabsType = {
   id: number;
-  tag: string;
-  tagColor: string;
+  tag?: string;
+  tagColor?: string;
   bgColor: string;
   borderColor: string;
   list: string[];
   svg: string;
-};
+};  
 export type ServiceType = {
-  jee: TapsType[];
-  neet: TapsType[];
-  tt: Omit<TapsType, 'tag' | 'tagColor'>[];
+  jee: TabsType[];
+  neet: TabsType[];
+  tt: Omit<TabsType, 'tag' | 'tagColor'>[];
 };

@@ -1,8 +1,8 @@
 import React from 'react';
-import { TapsType } from '@/types/type';
+import { TabsType } from '@/types/type';
 import { cn } from '@/lib/utils';
 
-type Props = TapsType & {
+type Props = TabsType & {
   className?: string;
 };
 
@@ -18,7 +18,7 @@ export default function ServiceCard({
   return (
     <div
       className={cn(
-        ' rounded-xl border-1 p-3 lg:p-6 xl:h-[230px]',
+        'rounded-xl border-1 p-3 lg:p-6 lg:pb-3',
         className,
         bgColor,
         borderColor
@@ -39,9 +39,9 @@ export default function ServiceCard({
           <img src={svg} alt="Achievement Medal" className="h-12 w-12" />
         </div>
       </div>
-      <div className="mt-10 max-w-[270px] space-y-1 text-start">
+      <div className="mt-8 max-w-[270px] space-y-1 text-start">
         {list.map((item, index) => (
-          <p key={index} className="text-sm font-semibold text-gray-800">
+          <p key={index} className="mt-2 text-sm font-semibold text-gray-800">
             {item}
           </p>
         ))}
