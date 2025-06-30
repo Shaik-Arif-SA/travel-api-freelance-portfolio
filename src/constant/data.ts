@@ -62,7 +62,7 @@ export const testimonials: TestimonialType[] = [
   },
   {
     id: 4,
-    name: 'Swathi V',
+    name: 'Vasu V',
     image: '/images/hero/testimonial4.webp',
     role: 'JEE Aspirant',
     disc: 'Mindspace’s teaching style made complex concepts so easy to grasp. The test series and regular feedback sessions pushed me to constantly improve and stay focused.'
