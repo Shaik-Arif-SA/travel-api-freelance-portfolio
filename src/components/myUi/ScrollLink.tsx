@@ -8,12 +8,14 @@ type ScrollLinkProps = {
   className?: string;
   to: string;
   props?: LinkProps;
+  onClick?: () => void;
 };
 
 export default function ScrollLink({
   children,
   className,
   to,
+  onClick,
   ...props
 }: ScrollLinkProps) {
   return (
@@ -23,10 +25,10 @@ export default function ScrollLink({
       smooth={true}
       duration={500}
       offset={-80}
+      onClick={onClick}
       {...props}
     >
       {children}
     </Link>
   );
 }
-

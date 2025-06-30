@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import { Mentor } from '@/types/type';
+import { MentorType} from '@/types/type';
 
 export default function MentorsCard({
   name,
   subject,
   institute,
   image
-}: Mentor) {
+}: MentorType) {
   return (
     <div className="relative flex  min-h-[450px] flex-col items-center justify-center overflow-hidden rounded-xl">
       <Image
@@ -18,9 +18,9 @@ export default function MentorsCard({
       />
 
       <div className="border-primary absolute bottom-4 w-[300px] rounded-2xl border bg-blue-100 p-4 text-center">
-        <h3 className='text-md font-bold text-primary'>{name}</h3>
-        <p className='text-sm mt-2 font-medium'>{subject}</p>
-        <p className='text-sm font-medium'>{institute}</p>
+        <h3 className="text-md font-bold text-primary">{name}</h3>
+        <p className="mt-2 text-sm font-medium">{subject}</p>
+        <p className="text-sm font-medium">{institute}</p>
       </div>
     </div>
   );

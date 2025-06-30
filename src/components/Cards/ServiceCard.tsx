@@ -1,6 +1,7 @@
 import React from 'react';
 import { TabsType } from '@/types/type';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 type Props = TabsType & {
   className?: string;
@@ -36,7 +37,7 @@ export default function ServiceCard({
           </div>
         )}
         <div className="ml-4">
-          <img src={svg} alt="Achievement Medal" className="h-12 w-12" />
+          <Image src={svg} alt="Achievement Medal"  className="h-12 w-12" />
         </div>
       </div>
       <div className="mt-8 max-w-[270px] space-y-1 text-start">

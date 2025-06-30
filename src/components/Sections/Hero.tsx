@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Sections from '@/components/myUi/Section';
-import { Button, ScrollButton } from '@/components/ui/button';
+import { ScrollButton } from '@/components/ui/button';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
     >
       <div className="place-items-center text-center lg:place-items-start lg:text-left">
         <Image
-          src="/Images/hero/hero2.svg"
+          src="/images/hero/hero2.svg"
           alt="home_student"
           width={50}
           height={50}
@@ -66,7 +66,7 @@ export default function Home() {
         className="right-0 place-self-center lg:place-self-end"
       >
         <Image
-          src="/Images/hero/hero.webp"
+          src="/images/hero/hero.webp"
           alt="home_student"
           width={550}
           height={550}
