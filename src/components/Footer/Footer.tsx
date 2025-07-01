@@ -14,6 +14,7 @@ import clsx from 'clsx';
 import { RiWhatsappFill } from 'react-icons/ri';
 import { MdEmail } from 'react-icons/md';
 import ScrollLink from '../myUi/ScrollLink';
+import Link from 'next/link';
 export default function Footer() {
   const queryClient = useQueryClient();
   const {
@@ -58,7 +59,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <ScrollLink
                     to={link.link}
-                    className="text-md font-normal cursor-pointer"
+                    className="text-md cursor-pointer font-normal"
                   >
                     {link.name}
                   </ScrollLink>
@@ -112,9 +113,23 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-3 flex items-center justify-center gap-2 xl:mt-0">
-          <Image src="/images/facebook.svg" alt="Logo" width={25} height={45} />
-          <Image src="/images/x.svg" alt="Logo" width={25} height={45} />
-          <Image src="/images/linkedin.svg" alt="Logo" width={25} height={45} />
+          <Link
+            href="https://www.facebook.com/share/1BakvabY1e/?mibextid=wwXIfr"
+            target="_blank"
+          >
+            <Image
+              src="/images/facebook.svg"
+              alt="Logo"
+              width={25}
+              height={25}
+            />
+          </Link>
+          <Link
+            href="https://www.instagram.com/mindspaceacademy1?igsh=MWp5dWJ2ZHV6ZHR0dA=="
+            target="_blank"
+          >
+            <Image src="/images/insta.svg" alt="Logo" width={25} height={25} />
+          </Link>
         </div>
       </Sections>
     </footer>

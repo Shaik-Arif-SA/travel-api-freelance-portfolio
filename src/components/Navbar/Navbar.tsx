@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import { Menu, X } from 'lucide-react';
 import { MdEmail } from 'react-icons/md';
 import { RiWhatsappFill } from 'react-icons/ri';
-
+import Link from 'next/link';
 import {
   MotionDiv,
   MotionAnimatePresence,
@@ -53,12 +53,30 @@ export default function Navbar() {
             </p>
           </span>
         </div>
+
         <div className="flex items-center gap-2">
-          <Image src="/images/facebook.svg" alt="Logo" width={25} height={45} />
-          <Image src="/images/x.svg" alt="Logo" width={25} height={45} />
-          <Image src="/images/linkedin.svg" alt="Logo" width={25} height={45} />
+          <Link
+            href="https://www.facebook.com/share/1BakvabY1e/?mibextid=wwXIfr"
+            target="_blank"
+          >
+            <Image
+              src="/images/facebook.svg"
+              alt="Logo"
+              width={25}
+              height={25}
+            />
+          </Link>
+
+          <Link
+            href="https://www.instagram.com/mindspaceacademy1?igsh=MWp5dWJ2ZHV6ZHR0dA=="
+            target="_blank"
+          >
+            <Image src="/images/insta.svg" alt="Logo" width={25} height={25} />
+          </Link>
+
         </div>
       </div>
+
       <div className="flex items-center justify-between px-5 py-4 shadow-lg xl:px-10 xl:shadow-sm">
         <div className="flex items-center gap-4">
           <Image

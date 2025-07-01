@@ -37,7 +37,7 @@ export default function ServiceCard({
           </div>
         )}
         <div className="ml-4">
-          <Image src={svg} alt="Achievement Medal"  className="h-12 w-12" />
+          <Image src={svg} alt="Achievement Medal" width={40} height={40} />
         </div>
       </div>
       <div className="mt-8 max-w-[270px] space-y-1 text-start">
