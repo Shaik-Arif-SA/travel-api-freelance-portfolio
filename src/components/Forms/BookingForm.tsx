@@ -27,7 +27,7 @@ export function BookingForm({
         <CardTitle className="font-montserrat text-ms-secondary text-2xl">
         Let’s connect!
         </CardTitle>
-         <p className='text-gray-500'>Let’s spark the future of education—connect with us and ignite your
+         <p className='text-gray-500'>Let’s spark the future of education connect with us and ignite your
          teaching journey.</p>
       </CardHeader>
       <CardContent>

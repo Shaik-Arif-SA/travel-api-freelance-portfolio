@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="bg-cover py-10 lg:px-8 lg:py-20 bg-center"
+      className="bg-cover bg-center py-10 lg:px-8 lg:py-20"
       style={{
         backgroundImage: `url('/images/hero/contact_bg2.webp')`
       }}

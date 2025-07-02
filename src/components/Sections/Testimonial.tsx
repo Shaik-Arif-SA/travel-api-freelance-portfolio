@@ -14,11 +14,14 @@ export default function Testimonial() {
   const swiperRef = useRef<any>(null);
 
   return (
-    <div>
-      <Sections
-        id="testimonial"
-        className="font-montserrat py-10 lg:px-8 lg:py-20"
-      >
+    <div
+      id="testimonial"
+      className="bg-cover bg-center py-10 lg:py-20"
+      style={{
+        backgroundImage: `url('/images/hero/testimonials_bg.webp')`
+      }}
+    >
+      <Sections className="font-montserrat lg:px-8">
         <div className="title-1 mx-auto mt-2 mb-14 w-full max-w-lg text-center">
           What Our <span className="text-ms-secondary">Students</span> Say!
         </div>
