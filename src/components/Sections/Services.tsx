@@ -13,15 +13,15 @@ export default function Services() {
   return (
     <div
       id="services"
-      className="font-montserrat bg-cover bg-center py-20"
+      className="font-montserrat bg-cover bg-center py-2"
       style={{
         backgroundImage: `url('/images/hero/contact_bg1.webp')`
       }}
     >
       <Sections className="px-3 lg:px-6 xl:!px-6">
-        <div className="text-md flex items-center justify-center gap-2 font-semibold text-white">
+        <div className="text-md py-5 flex items-center justify-center gap-2 font-semibold text-white">
           <button
-            className="data-[state=jee]:text-primary flex cursor-pointer items-center gap-2 rounded-sm px-4 py-2 data-[state=jee]:bg-white"
+            className="data-[state=jee]:text-primary data-[state=jee]:bg-ms-primary-50 flex cursor-pointer items-center gap-2 rounded-sm px-4 py-2"
             data-state={mode}
             onClick={() => setMode('jee')}
           >
@@ -29,7 +29,7 @@ export default function Services() {
           </button>
           <button
             className={clsx(
-              'data-[state=neet]:text-primary flex cursor-pointer items-center gap-2 rounded-sm px-4 py-2 data-[state=neet]:bg-white'
+              'data-[state=neet]:text-primary data-[state=neet]:bg-ms-primary-50 flex cursor-pointer items-center gap-2 rounded-sm px-4 py-2'
             )}
             data-state={mode}
             onClick={() => setMode('neet')}
@@ -38,7 +38,7 @@ export default function Services() {
           </button>
           <button
             className={clsx(
-              'data-[state=tt]:text-primary flex cursor-pointer items-center gap-2 rounded-sm px-4 py-2 data-[state=tt]:bg-white'
+              'data-[state=tt]:text-primary data-[state=tt]:bg-ms-primary-50 flex cursor-pointer items-center gap-2 rounded-sm px-4 py-2'
             )}
             data-state={mode}
             onClick={() => setMode('tt')}
@@ -46,7 +46,7 @@ export default function Services() {
             TT
           </button>
         </div>
-        <div className="mt-10 rounded-2xl bg-white p-3 md:p-8 xl:p-5 xl:px-8">
+        <div className=" rounded-2xl bg-white p-3 md:p-8 xl:p-5 xl:px-8">
           {mode === 'jee' && <JEEContainer jee={services.jee} />}
           {mode === 'neet' && <NEETContainer neet={services.neet} />}
           {mode === 'tt' && <TTContainer tt={services.tt} />}
