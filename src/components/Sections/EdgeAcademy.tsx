@@ -13,10 +13,10 @@ export default function EdgeAcademy() {
         <div className="mb-14 flex w-full flex-col items-center lg:flex-row lg:justify-between">
           <div className="title-1 font-montserrat mt-2 mb-3 max-w-[25rem] text-center lg:text-start">
             Your Edge with
-            <span className="text-secondary"> MindSpace</span> Academy
+            <span className="text-ms-secondary"> MindSpace</span> Academy
           </div>
 
-          <p className="max-w-lg text-center text-sm font-medium lg:text-end">
+          <p className="font-dm-sans max-w-lg text-center text-sm font-semibold lg:text-end">
             MindSpace Academy combines expert faculty, personalized mentorship,
             and structured, tech-enabled learning to help students excel in JEE,
             NEET, and TT. We focus on conceptual clarity, smart preparation, and

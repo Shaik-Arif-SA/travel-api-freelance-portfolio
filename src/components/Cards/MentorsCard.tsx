@@ -17,8 +17,8 @@ export default function MentorsCard({
         className="h-full w-full object-cover"
       />
 
-      <div className="border-primary absolute bottom-4 w-[300px] rounded-2xl border bg-blue-100 p-4 text-center">
-        <h3 className="text-md font-bold text-primary">{name}</h3>
+      <div className="border-ms-primary absolute bottom-4 w-[300px] rounded-2xl border bg-blue-100 p-4 text-center">
+        <h3 className="text-md font-bold text-ms-primary">{name}</h3>
         <p className="mt-2 text-sm font-medium">{subject}</p>
         <p className="text-sm font-medium">{institute}</p>
       </div>

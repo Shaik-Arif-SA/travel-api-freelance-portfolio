@@ -21,7 +21,7 @@ export default function Home() {
         <p
           data-aos="flip-right"
           data-aos-duration="1000"
-          className="bg-primary-50 font-dm-sans w-fit rounded-xl border-1 border-blue-500 p-2 py-2"
+          className="bg-ms-primary-50 font-dm-sans w-fit rounded-xl border-1 border-blue-500 p-2 py-2"
         >
           👋 Welcome to Mindspace Academy
         </p>
@@ -30,8 +30,8 @@ export default function Home() {
           data-aos-duration="400"
           className="font-montserrat mt-8 text-2xl leading-9 font-extrabold md:leading-12 lg:text-4xl"
         >
-          Empower Your <span className="text-secondary">Mind</span> to Achieve
-          More Than Just Marks
+          Empower Your <span className="text-ms-secondary">Mind</span> to
+          Achieve More Than Just Marks
         </div>
         <p
           data-aos="fade-right"
@@ -39,15 +39,14 @@ export default function Home() {
           className="font-dm-sans mt-6 text-sm text-gray-800 md:text-lg"
         >
           At MindSpace, we go beyond textbooks to ignite a deeper understanding,
-          sharpen problem-solving skills, and build lasting confidence.
+          sharpen problem solving skills, and build lasting confidence.
         </p>
 
         <div className="mt-6 flex gap-3 lg:mb-3 xl:mb-0">
           <ScrollButton
             variant={'outline'}
             to="services"
-            className="bg-secondary-50"
-            data-aos="fade-up"
+            className="bg-ms-secondary-50"
           >
             Explore Courses
           </ScrollButton>
@@ -55,7 +54,6 @@ export default function Home() {
             variant={'secondary'}
             to="contact"
             className="text-white"
-            data-aos="fade-up"
           >
             Contact Us
           </ScrollButton>

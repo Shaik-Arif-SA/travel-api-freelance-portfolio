@@ -24,7 +24,7 @@ export function BookingForm({
   return (
     <Card className={cn(className)} {...props}>
       <CardHeader>
-        <CardTitle className="font-montserrat text-secondary text-2xl">
+        <CardTitle className="font-montserrat text-ms-secondary text-2xl">
         Let’s connect!
         </CardTitle>
          <p className='text-gray-500'>Let’s spark the future of education—connect with us and ignite your

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Roboto, Montserrat,DM_Sans} from 'next/font/google';
+import { Montserrat, DM_Sans } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar/Navbar';
 import QueryProvider from '@/providers/queryProvider';
@@ -8,11 +8,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import 'swiper/css';
 import { Toaster } from 'react-hot-toast';
-
-const roboto = Roboto({
-  variable: '--font-roboto',
-  subsets: ['latin']
-});
 
 const montserrat = Montserrat({
   variable: '--font-montserrat',
@@ -43,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} ${montserrat.variable} ${dmSans.variable} scrollbar antialiased`}
+        className={`${montserrat.className} ${dmSans.variable} scrollbar antialiased`}
       >
         <Toaster
           toastOptions={{ duration: 4000 }}

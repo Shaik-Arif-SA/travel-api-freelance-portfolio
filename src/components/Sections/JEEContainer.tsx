@@ -10,7 +10,7 @@ export default function JEEContainer({ jee }: Props) {
     <div className="relative">
       <div className="flex flex-col lg:items-center justify-between lg:flex-row">
         <div>
-          <h2 className="text-primary py-5 text-xl font-bold text-center ">JEE MAIN</h2>
+          <h2 className="text-ms-primary py-5 text-xl font-bold font-montserrat text-center ">JEE MAIN</h2>
           <div className="flex flex-col gap-y-4">
             {jee.slice(0, 4).map(data => (
               <ServiceCard
@@ -31,7 +31,7 @@ export default function JEEContainer({ jee }: Props) {
           </div>
         </div>
         <div className="mt-10 lg:mt-0">
-          <h2 className="text-primary py-5 text-xl font-bold text-center ">JEE ADVANCE</h2>
+          <h2 className="text-ms-primary py-5 text-xl font-bold font-montserrat text-center ">JEE ADVANCE</h2>
           <div className="flex flex-col gap-y-4">
             {jee.slice(4, 8).map(data => (
               <ServiceCard

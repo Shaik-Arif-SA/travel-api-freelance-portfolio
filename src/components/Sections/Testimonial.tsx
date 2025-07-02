@@ -15,9 +15,12 @@ export default function Testimonial() {
 
   return (
     <div>
-      <Sections id="testimonial" className="font-montserrat py-10 lg:px-8 lg:py-20">
+      <Sections
+        id="testimonial"
+        className="font-montserrat py-10 lg:px-8 lg:py-20"
+      >
         <div className="title-1 mx-auto mt-2 mb-14 w-full max-w-lg text-center">
-          What Our <span className="text-secondary">Students</span> Say!
+          What Our <span className="text-ms-secondary">Students</span> Say!
         </div>
 
         <div>
@@ -53,13 +56,15 @@ export default function Testimonial() {
           </Swiper>
         </div>
 
-        <div className="mt-6 flex w-full justify-between items-center px-3">
+        <div className="mt-6 flex w-full items-center justify-between px-3">
           <div className="flex justify-center gap-2">
             {testimonials.map((_, index) => (
               <div
                 key={index}
                 className={`h-2 cursor-pointer rounded-full transition-all duration-300 ${
-                  activeIndex === index ? 'bg-primary w-10' : 'w-4 bg-blue-100'
+                  activeIndex === index
+                    ? 'bg-ms-primary w-10'
+                    : 'bg-ms-primary-50 w-4'
                 }`}
                 onClick={() => {
                   setActiveIndex(index);
@@ -68,16 +73,16 @@ export default function Testimonial() {
               />
             ))}
           </div>
-          <div className="flex  justify-center gap-2">
+          <div className="flex justify-center gap-2">
             <Button
               id="prev"
-              className="cursor-pointer py-5 rounded-full text-white"
+              className="cursor-pointer rounded-full py-5 text-white"
             >
               <ChevronLeft size={30} />
             </Button>
             <Button
               id="next"
-              className="bg-primary py-5  cursor-pointer rounded-full text-xl text-white"
+              className="cursor-pointer rounded-full py-5 text-xl text-white"
             >
               <ChevronRight />
             </Button>

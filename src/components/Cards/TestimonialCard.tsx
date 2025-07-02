@@ -39,10 +39,10 @@ export default function TestimonialCard({
           </div>
 
           <div className="mt-auto">
-            <div className="text-primary font-montserrat text-lg font-bold">
+            <div className="text-ms-primary font-montserrat text-lg font-bold">
               {name}
             </div>
-            <div className="text-secondary text-sm">{role}</div>
+            <div className="text-ms-secondary text-sm">{role}</div>
           </div>
         </div>
       </div>

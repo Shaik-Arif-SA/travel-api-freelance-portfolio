@@ -40,14 +40,14 @@ export default function Navbar() {
 
   return (
     <nav className="font-montserrat fixed top-0 z-20 w-full bg-white">
-      <div className="bg-primary flex w-full justify-between p-3 px-5 md:px-10">
+      <div className="bg-ms-primary flex w-full justify-between p-3 px-5 md:px-10">
         <div className="flex items-center gap-2">
           <span className="flex items-center gap-2 rounded-lg bg-[#FFFCEB] p-1 md:p-2">
-            <RiWhatsappFill className="text-secondary" size={23} />
+            <RiWhatsappFill className="text-ms-secondary" size={23} />
             <p className="hidden text-sm font-medium md:block">8886891111</p>
           </span>
           <span className="flex items-center gap-2 rounded-lg bg-[#FFFCEB] p-1 md:p-2">
-            <MdEmail className="text-secondary" size={23} />
+            <MdEmail className="text-ms-secondary" size={23} />
             <p className="hidden text-sm font-medium md:block">
               mindspaceacademy.i2global@gmail.com
             </p>
@@ -73,7 +73,6 @@ export default function Navbar() {
           >
             <Image src="/images/insta.svg" alt="Logo" width={25} height={25} />
           </Link>
-
         </div>
       </div>
 
@@ -86,7 +85,7 @@ export default function Navbar() {
             width={45}
             height={45}
           />
-          <strong className="text-primary bold text-center text-sm font-bold md:text-lg">
+          <strong className="text-ms-primary bold text-center text-sm font-bold md:text-lg">
             Mindspace Academy
           </strong>
         </div>
@@ -96,7 +95,7 @@ export default function Navbar() {
             <li key={index}>
               <ScrollLink
                 className={clsx(
-                  'hover:text-primary cursor-pointer rounded-full px-3 py-2 text-sm font-medium transition-colors ease-in-out'
+                  'hover:text-ms-primary cursor-pointer rounded-full px-3 py-2 text-sm font-medium transition-colors ease-in-out'
                 )}
                 to={link.link}
               >

@@ -14,8 +14,8 @@ export default function Mentors() {
     <Sections id="mentors" className="font-montserrat py-10 lg:px-8 lg:py-20">
       <div className="mb-14 w-full text-center">
         <div className="title-1 mx-auto mt-2 mb-3 max-w-lg">
-          The <span className="text-secondary">Experts</span> Who Turn Potential
-          Into Performance
+          The <span className="text-ms-secondary">Experts</span> Who Turn
+          Potential Into Performance
         </div>
       </div>
       <div className="relative mt-5">
@@ -56,7 +56,7 @@ export default function Mentors() {
         </Button>
         <Button
           id="next1"
-          className="bg-primary cursor-pointer rounded-full py-5 text-xl text-white"
+          className="cursor-pointer rounded-full py-5 text-xl text-white"
         >
           <ChevronRight />
         </Button>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Sections from '../myUi/Section';
 import { cn } from '@/lib/utils';
+
 const countData: { count: string; label: string }[] = [
   {
     count: '1450',

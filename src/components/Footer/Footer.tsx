@@ -89,7 +89,7 @@ export default function Footer() {
                   disabled={isPending}
                   type="submit"
                   className={clsx(
-                    'bg-secondary cursor-pointer px-2 py-3 text-sm text-white',
+                    'bg-ms-secondary cursor-pointer px-2 py-3 text-sm text-white',
                     isPending && 'cursor-not-allowed opacity-50'
                   )}
                 >
