@@ -44,7 +44,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <span className="flex items-center gap-2 rounded-lg bg-[#FFFCEB] p-1 md:p-2">
             <RiWhatsappFill className="text-ms-secondary" size={23} />
-            <p className="hidden text-sm font-medium md:block">8886891111</p>
+            <p className="hidden text-sm font-medium md:block">8886891115</p>
           </span>
           <span className="flex items-center gap-2 rounded-lg bg-[#FFFCEB] p-1 md:p-2">
             <MdEmail className="text-ms-secondary" size={23} />
