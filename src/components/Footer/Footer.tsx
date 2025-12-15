@@ -103,6 +103,7 @@ export default function Footer() {
             <div className="mt-6 flex items-center gap-2 text-sm font-normal">
               <RiWhatsappFill className="text-white" size={20} />
               <span className="text-white">8886891115</span>
+              {/* --------------------------- */}
             </div>
             <div className="mt-2 flex items-center gap-2 text-sm font-normal">
               <MdEmail className="text-white" size={20} />
