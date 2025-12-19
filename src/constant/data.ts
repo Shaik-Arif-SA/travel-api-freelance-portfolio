@@ -1,5 +1,7 @@
 import { MentorType, ServiceType, TestimonialType } from '@/types/type';
 
+/* ===================== MENTORS ===================== */
+
 export const mentors: MentorType[] = [
   {
     id: 1,
@@ -38,36 +40,59 @@ export const mentors: MentorType[] = [
   }
 ];
 
+/* ===================== TESTIMONIALS (UPDATED) ===================== */
+
 export const testimonials: TestimonialType[] = [
   {
     id: 1,
-    role: 'Parent of NEET Aspirant',
+    name: 'Kartik',
+    role: 'Student',
     image: '/images/hero/testimonial1.webp',
-    name: 'Meena R',
-    disc: 'I enrolled my daughter at Mindspace Academy for NEET coaching, and her transformation has been incredible. The focused mentorship and regular mock tests helped her build both speed and accuracy.'
+    disc:
+      'I gave the psychometric test at Career Code and honestly it was an eye opener. The report showed me my strengths and areas I never thought about. Komal ma’am explained it so simply that I finally know which career suits me.'
   },
   {
     id: 2,
-    role: 'Parent of JEE Aspirant',
+    name: 'Manav Chainani',
+    role: 'Student',
     image: '/images/hero/testimonial2.webp',
-    name: 'Arvind S',
-    disc: 'Mindspace Academy’s structured approach and dedicated faculty gave my son the clarity he needed for JEE. The consistent performance tracking really helped him stay motivated'
+    disc: 'Very helpful! Would 100% recommend.'
   },
   {
     id: 3,
-    role: 'NEET Aspirant',
+    name: 'Prudenciana Alphanso',
+    role: 'Parent',
     image: '/images/hero/testimonial3.webp',
-    name: 'Sneha T',
-    disc: 'Joining Mindspace Academy was the best decision for my NEET prep. The personalized attention and exam-focused strategy helped me overcome my weak areas with confidence.'
+    disc:
+      'We were very confused about what stream my daughter should choose. After the aptitude test and one-to-one session, things became clear. Komal ma’am guided her so patiently and I could see my child getting more confident about her future.'
   },
   {
     id: 4,
-    name: 'Vasu V',
+    name: 'Manjusha Chainani',
+    role: 'Parent',
     image: '/images/hero/testimonial4.webp',
-    role: 'JEE Aspirant',
-    disc: 'Mindspace’s teaching style made complex concepts so easy to grasp. The test series and regular feedback sessions pushed me to constantly improve and stay focused.'
+    disc:
+      'My son was confused about what to do after BCom. We got to know his strengths and shortcomings and he was guided well on suitable post-graduation options and job profiles where he will excel. I highly recommend Career Code for school and college students.'
+  },
+  {
+    id: 5,
+    name: 'Tejal Bandekar',
+    role: 'Parent',
+    image: '/images/hero/testimonial5.webp',
+    disc:
+      'My son studying in 9th standard was very confused about stream selection. Career Code provided excellent guidance through detailed tests and a clear career mapping report.'
+  },
+  {
+    id: 6,
+    name: 'Sarthak Bandekar',
+    role: 'Student',
+    image: '/images/hero/testimonial6.webp',
+    disc:
+      'Career Code really helped me find clarity about my goals and choose the right subjects in 9th standard. Counseling helped me understand my strengths and confidently choose commerce.'
   }
 ];
+
+/* ===================== SERVICES ===================== */
 
 export const services: ServiceType = {
   jee: [
@@ -113,47 +138,6 @@ export const services: ServiceType = {
         '1 point is deducted for each wrong answer'
       ],
       svg: '/images/hero/service4.svg'
-    },
-    {
-      id: 5,
-      tag: 'Qualified Admission',
-      tagColor: 'bg-[#015D85]',
-      bgColor: 'bg-[#C7E5F2]',
-      borderColor: 'border-[#015D85]',
-      list: [
-        ' Indian Institute of Technology (IITs)',
-        ' Indian School of Mines(ISM)'
-      ],
-      svg: '/images/hero/service1.svg'
-    },
-
-    {
-      id: 6,
-      tag: 'Exam Pattern',
-      tagColor: 'bg-[#AB9500]',
-      bgColor: 'bg-[#F5F0CE]',
-      borderColor: 'border-[#AB9500]',
-      list: [' 2 Separate exams'],
-      svg: '/images/hero/service2.svg'
-    },
-    {
-      id: 7,
-      tag: 'Syllabus',
-      tagColor: 'bg-[#D76100]',
-      bgColor: 'bg-[#FFDDC1]',
-      borderColor: 'border-[#D76100]',
-      list: [' Physics', 'Chemistry', 'Maths'],
-      svg: '/images/hero/service3.svg'
-    },
-
-    {
-      id: 8,
-      tag: 'Question Pattern',
-      tagColor: 'bg-[#A60202]',
-      bgColor: 'bg-[#FFC1C1]',
-      borderColor: 'border-[#A60202]',
-      list: ['3-hour duration', '3 sections'],
-      svg: '/images/hero/service4.svg'
     }
   ],
   neet: [
@@ -164,37 +148,10 @@ export const services: ServiceType = {
       bgColor: 'bg-[#C7E5F2]',
       borderColor: 'border-[#015D85]',
       list: [
-        ' Bachelor of Medicine and Bachelor of Surgery (MBBS) ',
+        ' Bachelor of Medicine and Bachelor of Surgery (MBBS)',
         ' Bachelor of Dental Surgery (BDS)'
       ],
       svg: '/images/hero/service1.svg'
-    },
-
-    {
-      id: 2,
-      tag: 'Exam Pattern',
-      tagColor: 'bg-[#AB9500]',
-      bgColor: 'bg-[#F5F0CE]',
-      borderColor: 'border-[#AB9500]',
-      list: [
-        ' 3 Hours Time Duration',
-        '180 Multiple Choice Questions',
-        '45 Questions from each subject'
-      ],
-      svg: '/images/hero/service2.svg'
-    },
-    {
-      id: 3,
-      tag: 'Question Pattern',
-      tagColor: 'bg-[#D76100]',
-      bgColor: 'bg-[#FFDDC1]',
-      borderColor: 'border-[#D76100]',
-      list: [
-        ' Each section has 30 questions',
-        '4 marks for each correct answer',
-        '1 mark is deducted for each wrong answer'
-      ],
-      svg: '/images/hero/service3.svg'
     }
   ],
   tt: [
@@ -204,51 +161,6 @@ export const services: ServiceType = {
       borderColor: 'border-[#015D85]',
       list: ['Diploma in Early Childhood Education'],
       svg: '/images/hero/service5.svg'
-    },
-
-    {
-      id: 2,
-      bgColor: 'bg-[#F5F0CE]',
-      borderColor: 'border-[#AB9500]',
-      list: ['Advanced diploma in Early Childhood Education'],
-      svg: '/images/hero/service6.svg'
-    },
-
-    {
-      id: 3,
-      bgColor: 'bg-[#FFDDC1]',
-      borderColor: 'border-[#D76100]',
-      list: ['Professional Development qualification'],
-      svg: '/images/hero/service11.svg'
-    },
-
-    {
-      id: 4,
-      bgColor: 'bg-[#FFC1C1]',
-      borderColor: 'border-[#A60202]',
-      list: ['Tutors provide great academic support'],
-      svg: '/images/hero/service10.svg'
-    },
-    {
-      id: 5,
-      bgColor: 'bg-[#FFC1C1]',
-      borderColor: 'border-[#A60202]',
-      list: ['Practical Training / Internship'],
-      svg: '/images/hero/service7.svg'
-    },
-    {
-      id: 6,
-      bgColor: 'bg-[#FFDDC1]',
-      borderColor: 'border-[#D76100]',
-      list: ['Tutors are constantly in touch with trainees'],
-      svg: '/images/hero/service8.svg'
-    },
-    {
-      id: 7,
-      bgColor: 'bg-[#F5F0CE]',
-      borderColor: 'border-[#AB9500]',
-      list: ['Academic team is highly accomplished'],
-      svg: '/images/hero/service9.svg'
     }
   ]
 };

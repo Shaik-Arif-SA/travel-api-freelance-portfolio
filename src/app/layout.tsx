@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { Montserrat, DM_Sans } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/Navbar/Navbar';
+// import Navbar from '@/components/Navbar/Navbar';
 import QueryProvider from '@/providers/queryProvider';
-import Footer from '@/components/Footer/Footer';
+// import Footer from '@/components/Footer/Footer';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import 'swiper/css';
@@ -46,9 +46,9 @@ export default function RootLayout({
           reverseOrder={false}
         />
         <QueryProvider>
-          <Navbar />
+          {/* <Navbar /> */}
           <div>{children}</div>
-          <Footer />
+          {/* <Footer /> */}
         </QueryProvider>
       </body>
     </html>

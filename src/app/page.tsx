@@ -1,21 +1,30 @@
-import React from 'react';
-import Hero from '@/components/Sections/Hero';
-import Count from '@/components/Sections/Count';
-import Contact from '@/components/Sections/Contact';
-import Mentors from '@/components/Sections/Mentors';
-import EdgeAcademy from '@/components/Sections/EdgeAcademy';
-import Testimonial from '@/components/Sections/Testimonial';
-import Services from '@/components/Sections/Services';
-export default function page() {
+import { Hero } from "../components/Sections/Hero";
+import  { Introduction } from "../components/Sections/Introduction";
+import { Programs } from "../components/Sections/Programs";
+import { CareerCounselling } from "../components/Sections/CareerCounselling";
+import { Assessments } from "../components/Sections/Assessments";
+import  Mentors  from "../components/Sections/Mentors";
+// import { StudyAbroad } from "./components/StudyAbroad";
+import { CourseExploration } from "../components/Sections/CourseExploration";
+import  Contact  from "../components/Sections/Contact";
+import  Footer  from "../components/Footer/Footer";
+import CallbackButton   from "../components/Sections/CallbackButton";
+import Testimonial from "../components/Sections/Testimonial";
+export default function App() {
   return (
-    <div className="mt-35 overflow-hidden">
+    <div className="min-h-screen" style={{ background: "linear-gradient(rgb(255, 255, 255) 0%, rgb(254, 255, 221) 100%" }}>
       <Hero />
-      <Count />
-      <Contact />
-      <Services />
+      <Introduction />
+      <Programs />
+      {/* <CareerCounselling /> */}
+      {/* <Assessments /> */}
+      {/* <StudyAbroad /> */}
       <Mentors />
-      <EdgeAcademy />
+      <CourseExploration />
+      <Contact />
       <Testimonial />
+      <Footer />
+      <CallbackButton />
     </div>
   );
 }
