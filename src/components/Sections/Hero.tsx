@@ -19,9 +19,9 @@ export const Hero: React.FC = () => {
     { id: "introduction", label: "About" },
     { id: "programs", label: "Programs" },
     { id: "mentors", label: "Mentors" },
-    { id: "courses", label: "Courses" },
+    { id: "course-exploration", label: "Courses" },
     { id: "contact", label: "Contact" },
-    { id: "testimonials", label: "Testimonials" },
+    { id: "testimonial", label: "Testimonials" },
   ];
 
   return (
