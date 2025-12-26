@@ -1,30 +1,58 @@
-import { Hero } from "../components/Sections/Hero";
-import  { Introduction } from "../components/Sections/Introduction";
-import { Programs } from "../components/Sections/Programs";
-import { CareerCounselling } from "../components/Sections/CareerCounselling";
-import { Assessments } from "../components/Sections/Assessments";
-import  Mentors  from "../components/Sections/Mentors";
-// import { StudyAbroad } from "./components/StudyAbroad";
-import { CourseExploration } from "../components/Sections/CourseExploration";
-import  Contact  from "../components/Sections/Contact";
-import  Footer  from "../components/Footer/Footer";
-import CallbackButton   from "../components/Sections/CallbackButton";
-import Testimonial from "../components/Sections/Testimonial";
+"use client";
+
+import { useState, useEffect } from "react";
+import { Header } from "../components/Header";
+import { Hero } from "../components/Hero";
+
+import { Counselling } from "../components/Counselling";
+import { Footer } from "../components/Footer";
+import { WhatsAppFloat } from "../components/WhatsAppFloat";
+import { NotificationBar } from "../components/NotificationBar";
+
+import { TestimonialsCarousel } from "../components/TestimonialCarousel";
+import { FAQ } from "../components/FAQ";
+import { ContactModal } from "../components/ContactModal";
+
+import { ImageShowcase } from "../components/ImageShowcase";
+import { Quiz } from "../components/Quiz";
+import { Courses } from "../components/Courses";
+import { WhyChooseUs } from "../components/WhyChooseUs";
+import { Testimonials2 } from "../components/Testimonials2";
+
 export default function App() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
+  useEffect(() => {
+    const handleOpenModal = () => {
+      setIsContactModalOpen(true);
+    };
+
+    window.addEventListener('openContactModal', handleOpenModal);
+    return () => window.removeEventListener('openContactModal', handleOpenModal);
+  }, []);
+
   return (
-    <div className="min-h-screen" style={{ background: "linear-gradient(rgb(255, 255, 255) 0%, rgb(254, 255, 221) 100%" }}>
-      <Hero />
-      <Introduction />
-      <Programs />
-      {/* <CareerCounselling /> */}
-      {/* <Assessments /> */}
-      {/* <StudyAbroad /> */}
-      <Mentors />
-      <CourseExploration />
-      <Contact />
-      <Testimonial />
-      <Footer />
-      <CallbackButton />
+    <div className="min-h-screen">
+      <NotificationBar/>
+      <Header onContactClick={() => setIsContactModalOpen(true)} />
+      <main>
+        <Hero />
+        <ImageShowcase />
+        <TestimonialsCarousel />
+        <Quiz />
+        <Courses />
+        <WhyChooseUs />
+        <Counselling />
+        <Testimonials2 />
+        <FAQ />
+      </main>
+      <Footer onContactClick={() => setIsContactModalOpen(true)} />
+      <WhatsAppFloat />
+      {/* <LiveChatWidget /> */}
+      <ContactModal 
+        isOpen={isContactModalOpen} 
+        onClose={() => setIsContactModalOpen(false)} 
+      />
     </div>
   );
 }

@@ -20,15 +20,15 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Mindspace Academy',
+  title: 'careercode',
   description: 'Empower Your Mind to Achieve More Than Just Marks',
   authors: [{ name: 'i2Global' }],
   creator: 'i2Global Team',
   openGraph: {
-    title: 'Mindspace Academy',
+    title: 'careercode',
     description: 'Empower Your Mind to Achieve More Than Just Marks',
-    url: 'mindspaceacademy.com',
-    siteName: 'Mindspace Academy'
+    url: 'careercode.com',
+    siteName: 'careercode'
   }
 };
 
