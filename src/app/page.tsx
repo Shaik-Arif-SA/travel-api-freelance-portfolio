@@ -10,7 +10,7 @@ import { WhatsAppFloat } from "../components/WhatsAppFloat";
 import { NotificationBar } from "../components/NotificationBar";
 
 import { TestimonialsCarousel } from "../components/TestimonialCarousel";
-import { FAQ } from "../components/FAQ";
+import { FAQModern } from "../components/FAQ";
 import { ContactModal } from "../components/ContactModal";
 
 import { ImageShowcase } from "../components/ImageShowcase";
@@ -44,7 +44,7 @@ export default function App() {
         <WhyChooseUs />
         <Counselling />
         <Testimonials2 />
-        <FAQ />
+        <FAQModern />
       </main>
       <Footer onContactClick={() => setIsContactModalOpen(true)} />
       <WhatsAppFloat />
