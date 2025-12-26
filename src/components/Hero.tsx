@@ -95,7 +95,7 @@ export function Hero() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2">Quality Education</h3>
-                    <p className="text-gray-600">i2Global virtual learning programs for K-12, NEET, JEE with expert faculty</p>
+                    <p className="text-gray-600">CareerCode virtual learning programs for K-12, NEET, JEE with expert faculty</p>
                   </div>
                 </div>
               </div>

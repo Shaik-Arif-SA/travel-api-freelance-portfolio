@@ -147,7 +147,7 @@ export function Footer({ onContactClick }: FooterProps) {
 
         <div className="border-t border-gray-800 pt-8">
           <div className="text-center text-gray-400 text-sm">
-            <p>&copy; {new Date().getFullYear()} CareerCode by i2Global. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} CareerCode . All rights reserved.</p>
             <p className="mt-2">
               <span className="mx-2">|</span>
               <button className="hover:text-white transition-colors">Privacy Policy</button>

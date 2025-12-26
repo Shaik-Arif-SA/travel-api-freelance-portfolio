@@ -160,7 +160,7 @@ export function Courses() {
         <div className="text-center mb-12">
           <div className="inline-block mb-4">
             <span className="bg-gradient-to-r from-[#2563eb] via-[#dc2626] to-[#10b981] text-white px-6 py-2 rounded-full font-semibold">
-              i2Global Programs
+              CareerCode Programs
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Explore Our Courses</h2>

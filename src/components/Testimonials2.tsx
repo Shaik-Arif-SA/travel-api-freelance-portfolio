@@ -126,7 +126,7 @@ export function Testimonials2() {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold mb-4">Ready to Write Your Success Story?</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Join thousands of students who have achieved their dreams with CareerCode & i2Global
+            Join thousands of students who have achieved their dreams with CareerCode 
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button 

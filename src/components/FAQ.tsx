@@ -5,8 +5,8 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "What programs does i2Global offer?",
-    answer: "i2Global offers comprehensive K-12 online tuitions, virtual learning programs, foundation & crash courses, NEET/JEE preparation, and teacher training programs. All programs are designed with expert curriculum and interactive learning methods."
+    question: "What programs does CareerCode offer?",
+    answer: "CareerCode offers comprehensive K-12 online tuitions, virtual learning programs, foundation & crash courses, NEET/JEE preparation, and teacher training programs. All programs are designed with expert curriculum and interactive learning methods."
   },
   {
     question: "How does the career counselling process work?",
