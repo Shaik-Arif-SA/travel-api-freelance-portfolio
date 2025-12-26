@@ -167,7 +167,7 @@ export function TestimonialsCarousel() {
               </div>
               <button 
                 onClick={() => setSelectedVideo(null)}
-                className="mt-6 bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-lg hover:opacity-90 w-full transition-opacity"
+                className="mt-6 bg-gradient-to-r from-red-600 to-blue-600 text-white px-8 py-3 rounded-lg hover:opacity-90 w-full transition-opacity"
               >
                 Close
               </button>

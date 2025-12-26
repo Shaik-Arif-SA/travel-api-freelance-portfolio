@@ -53,6 +53,8 @@ export function Header({ onContactClick }: HeaderProps) {
               alt="CareerCode Logo" 
               className="h-16 w-auto object-contain"
             /> */}
+            <img src="/images/logo.png" alt="CareerCode Logo" 
+              className="h-16 w-auto object-contain scale-250"/>
           </div>
 
           {/* Desktop Navigation */}
