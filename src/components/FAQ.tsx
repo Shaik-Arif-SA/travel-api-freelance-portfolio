@@ -136,7 +136,7 @@ export function FAQModern() {
                     {/* Question */}
                     <motion.button
                       onClick={() => toggleFAQ(index)}
-                      className="w-full p-6 flex items-center justify-between gap-4 text-left"
+                      className="w-full p-3 flex items-center justify-between gap-4 text-left"
                     >
                       <span className={`font-bold text-lg md:text-xl transition-colors ${
                         openIndex === index 
