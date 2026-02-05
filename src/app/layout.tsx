@@ -20,15 +20,15 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'careercode',
+  title: 'Shaik Arif',
   description: 'Empower Your Mind to Achieve More Than Just Marks',
   authors: [{ name: 'i2Global' }],
   creator: 'i2Global Team',
   openGraph: {
-    title: 'careercode',
+    title: 'Shaik Arif',
     description: 'Empower Your Mind to Achieve More Than Just Marks',
-    url: 'careercode.com',
-    siteName: 'careercode'
+    url: 'https://shaikarif.com',
+    siteName: 'Shaik Arif'
   }
 };
 
