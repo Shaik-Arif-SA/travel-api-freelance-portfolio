@@ -1,42 +1,32 @@
-<<<<<<< HEAD
-# demo 5 franchises website template
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Travel technology freelance portfolio
 
-## Getting Started
+A Next.js portfolio for travel API integration, backend development, and end-to-end booking workflows.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
+cp .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contact form
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The form posts server-side to `CONTACT_FORM_ENDPOINT`, so no provider credential is exposed in browser code. The recommended free-tier setup is [Formspree](https://formspree.io/): create a form, confirm the receiving email, and copy its POST endpoint (for example `https://formspree.io/f/your-form-id`) into `.env.local`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The route validates input with Zod, includes a honeypot field, prevents duplicate submissions in the UI, and reports loading, success, validation, and provider error states. Formspree's free tier has usage limits; review its current terms before launch.
 
-## Learn More
+Required environment variable:
 
-To learn more about Next.js, take a look at the following resources:
+```text
+CONTACT_FORM_ENDPOINT=https://formspree.io/f/your-form-id
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For Vercel, add the variable under **Project Settings -> Environment Variables** for Preview and Production, then redeploy. Do not commit `.env` or `.env.local`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Checks
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
- 
->>>>>>> bac66f6 ( first commit)
+```bash
+npm run lint
+npm run build
+```

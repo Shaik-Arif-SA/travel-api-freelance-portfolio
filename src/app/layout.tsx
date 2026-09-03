@@ -1,34 +1,31 @@
 import type { Metadata } from 'next';
-import { Montserrat, DM_Sans } from 'next/font/google';
+import { DM_Sans, Space_Grotesk } from 'next/font/google';
 import './globals.css';
-// import Navbar from '@/components/Navbar/Navbar';
-import QueryProvider from '@/providers/queryProvider';
-// import Footer from '@/components/Footer/Footer';
-import 'swiper/css/navigation';
-import 'swiper/css/autoplay';
-import 'swiper/css';
-import { Toaster } from 'react-hot-toast';
 
-const montserrat = Montserrat({
-  variable: '--font-montserrat',
-  subsets: ['latin']
-});
-
-const dmSans = DM_Sans({
-  variable: '--font-dm-sans',
+const dmSans = DM_Sans({ variable: '--font-dm-sans', subsets: ['latin'] });
+const spaceGrotesk = Space_Grotesk({
+  variable: '--font-space-grotesk',
   subsets: ['latin']
 });
 
 export const metadata: Metadata = {
-  title: 'Shaik Arif',
-  description: 'Empower Your Mind to Achieve More Than Just Marks',
-  authors: [{ name: 'i2Global' }],
-  creator: 'i2Global Team',
+  title: 'Shaik Arif | Travel Technology API Integration & Backend Developer',
+  description:
+    'Travel technology API integration and backend development for hotel, flight, booking, pricing, payment, and cancellation workflows.',
+  keywords: [
+    'Travel API Integration Developer',
+    'Hotel API Integration',
+    'Flight API Integration',
+    'Travel Technology Developer',
+    'Backend Developer',
+    'PHP API Integration',
+    'Python API Integration'
+  ],
   openGraph: {
-    title: 'Shaik Arif',
-    description: 'Empower Your Mind to Achieve More Than Just Marks',
-    url: 'https://shaikarif.com',
-    siteName: 'Shaik Arif'
+    title: 'Travel Technology API Integration & Backend Developer',
+    description:
+      'Backend workflows that connect travel APIs to search, pricing, booking, payments, and post-booking operations.',
+    type: 'website'
   }
 };
 
@@ -37,19 +34,8 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.className} ${dmSans.variable} scrollbar antialiased`}
-      >
-        <Toaster
-          toastOptions={{ duration: 4000 }}
-          position="top-right"
-          reverseOrder={false}
-        />
-        <QueryProvider>
-          {/* <Navbar /> */}
-          <div>{children}</div>
-          {/* <Footer /> */}
-        </QueryProvider>
+      <body className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
+        {children}
       </body>
     </html>
   );
